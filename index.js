@@ -19,7 +19,7 @@ app.get('/', async (req, res) => {
 
     const response = "Hello World!"
 
-    res.send(response);
+    res.status(200).send(response);
   } catch (error) {
     console.log("error message: " + error)
     res.status(400).send('Error while getting list of repositories');
